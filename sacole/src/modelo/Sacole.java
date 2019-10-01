@@ -10,25 +10,25 @@ import java.time.LocalDate;
  * @author Administrador
  */
 public class Sacole {
-    private int codigo;
-    private int nrdeserie;
+    private Integer codigo;
+    private Integer nrdeserie;
     private LocalDate data; 
-    private double preco;
+    private Double preco;
     private String sabor;
 
-    public int getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
 
-    public int getNrdeserie() {
+    public Integer getNrdeserie() {
         return nrdeserie;
     }
 
-    public void setNrdeserie(int nrdeserie) {
+    public void setNrdeserie(Integer nrdeserie) {
         this.nrdeserie = nrdeserie;
     }
 
@@ -40,11 +40,11 @@ public class Sacole {
         this.data = data;
     }
 
-    public double getPreco() {
+    public Double getPreco() {
         return preco;
     }
 
-    public void setPreco(double preco) {
+    public void setPreco(Double preco) {
         this.preco = preco;
     }
 
@@ -58,7 +58,9 @@ public class Sacole {
 
     @Override
     public String toString() {
-        return "Sacole{" + "data=" + data + ", sabor=" + sabor + '}';
+        return "Sacole{" + "sabor=" + sabor + '}';
     }
+
+    
 
 }
